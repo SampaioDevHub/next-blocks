@@ -28,6 +28,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script src="//code.jivosite.com/widget/QLT8pwTJUq" async></script>
+
       </body>
     </html>
   );
