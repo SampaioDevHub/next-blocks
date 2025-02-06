@@ -1,7 +1,7 @@
 "use client";
 
 import { MenuIcon } from "lucide-react";
-import Logo from "@/public/zarologo.svg"
+import Logo from "@/public/ZAROLOGOo.svg"
 import {
     Accordion,
     AccordionContent,
@@ -26,6 +26,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
+import { Card } from "../ui/card";
 
 const Navbar5 = () => {
     const features = [
@@ -57,14 +58,11 @@ const Navbar5 = () => {
     ];
 
     return (
-        <section className="py-4 shadow-md rounded-sm">
+        <section className="shadow-md rounded-sm">
             <div className="container ">
-                <nav className="flex items-center justify-between ">
+                <nav className="flex items-center justify-between py-0 h-28 ">
                     <div className="flex items-center gap-2">
-                        <Image src={Logo} alt="ZARO Investimentos Imobiliários" className="w-16 ml-5" />
-                        <h1 className="text-[#EC671A] font-semibold"><span className="text-[#003466] ml-10 font-extrabold  text-4xl">ZARO</span><br />Investimentos Imobiliarios</h1>
-
-
+                        <Image src={Logo} alt="ZARO Investimentos Imobiliários" width={300} height={80} className="ml-3 lg:ml-5 h-auto" />
                     </div>
                     <NavigationMenu className="hidden lg:block">
                         <NavigationMenuList>
@@ -125,13 +123,15 @@ const Navbar5 = () => {
                                 <MenuIcon className="h-4 w-4" />
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="top" className="max-h-screen overflow-scroll">
+                        <SheetContent side="right" className="max-h-screen overflow-scroll">
                             <SheetHeader>
                                 <SheetTitle>
-                                    <div className="flex items-center gap-4">
-                                        <Image src={Logo} alt="ZARO Investimentos Imobiliários" className="w-16 ml-5" />
-                                        <h1 className="text-[#EC671A] font-semibold"><span className="text-[#003466] font-extrabold text-4xl">ZARO</span><br />Investimentos Imobiliarios</h1>
-                                    </div>
+                                    <Card className="mt-3 shadow-md">
+                                        <div className="flex items-center gap-4">
+                                            <Image src={Logo} alt="ZARO Investimentos Imobiliários" className="h-40" />
+                                        </div>
+                                    </Card>
+
                                 </SheetTitle>
                             </SheetHeader>
                             <div className="flex flex-col">
