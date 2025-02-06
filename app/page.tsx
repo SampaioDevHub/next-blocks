@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <Navbar5 />
-      <HeroVideoDialog videoSrc="/path/to/video.mp4" thumbnailSrc="/path/to/thumbnail.jpg" />
+      <HeroVideoDialog videoSrc="/path/to/video.mp4" thumbnailSrc={Back.src} />
       <div className="bg-orange-200 rounded-md mt-5 ml-5 mr-5 shadow-md">
         <section className="flex flex-col overflow-hidden">
           <ContainerScroll
