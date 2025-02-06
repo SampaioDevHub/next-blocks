@@ -60,7 +60,7 @@ const Navbar5 = () => {
     return (
         <section className="shadow-md rounded-sm">
             <div className="container ">
-                <nav className="flex items-center justify-between py-0 h-28 ">
+                <nav className="flex items-center justify-between py-0 h-28 px-4 ">
                     <div className="flex items-center gap-2">
                         <Image src={Logo} alt="ZARO Investimentos Imobiliários" width={300} height={80} className="ml-3 lg:ml-5 h-auto" />
                     </div>
@@ -123,7 +123,7 @@ const Navbar5 = () => {
                                 <MenuIcon className="h-4 w-4" />
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="max-h-screen overflow-scroll">
+                        <SheetContent side="right" className="max-h-screen overflow-scroll p-6">
                             <SheetHeader>
                                 <SheetTitle>
                                     <Card className="mt-3 shadow-md">
