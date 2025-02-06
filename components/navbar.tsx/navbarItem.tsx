@@ -174,8 +174,8 @@ const Navbar5 = () => {
                                     </a>
                                 </div>
                                 <div className="mt-6 flex flex-col gap-4">
-                                    <Button variant="outline">WhatsApp: (19) 98869-1261</Button>
-                                    <Button>Email: contato@zaroinvestimentos.com.br</Button>
+                                    <Button variant="outline">Para você</Button>
+                                    <Button>Para sua empresa</Button>
                                 </div>
                             </div>
                         </SheetContent>
